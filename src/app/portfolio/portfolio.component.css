@@ -67,9 +67,9 @@
   outline: none;
   cursor: pointer;
 
-  -webkit-box-shadow: 0px 5px 10px 1px rgba(222,222,222,1);
-  -moz-box-shadow: 0px 5px 10px 1px rgba(222,222,222,1);
-  box-shadow: 0px 5px 10px 1px rgba(222,222,222,1);
+  -webkit-box-shadow: 0 5px 10px 1px rgba(222,222,222,1);
+  -moz-box-shadow: 0 5px 10px 1px rgba(222,222,222,1);
+  box-shadow: 0 5px 10px 1px rgba(222,222,222,1);
 }
 
 .main__button:active {
