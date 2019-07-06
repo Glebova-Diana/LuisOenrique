@@ -1,0 +1,15 @@
+<div class="wrapper">
+  <div class="sub-wrapper">
+    <div class="headline">
+      <div class="headline__border"></div>
+      <div class="headline__title">Portfolio</div>
+    </div>
+    <main class="main">
+      <div class="main__portfolio">
+        <img *ngFor="let image of visibleImgArray" class="main__img" [src]="image.src" [alt]="image.alt">
+      </div>
+
+      <button [disabled]="visibleImgArray.length === imageArray.length" (click)="loadMore()" class="main__button" type="button">Load more</button>
+    </main>
+  </div>
+</div>
