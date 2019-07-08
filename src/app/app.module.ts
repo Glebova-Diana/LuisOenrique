@@ -6,6 +6,9 @@ import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
 import { ServicesComponent } from './services/services.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
+import { TestimonialsComponent } from './testimonials/testimonials.component';
+import { AchievementsComponent } from './achievements/achievements.component';
+import { SwiperModule } from 'ngx-swiper-wrapper';
 
 @NgModule({
   declarations: [
@@ -13,10 +16,13 @@ import { PortfolioComponent } from './portfolio/portfolio.component';
     HomeComponent,
     AboutComponent,
     ServicesComponent,
-    PortfolioComponent
+    PortfolioComponent,
+    TestimonialsComponent,
+    AchievementsComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    SwiperModule
   ],
   providers: [],
   bootstrap: [AppComponent]
