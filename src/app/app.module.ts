@@ -9,6 +9,7 @@ import { PortfolioComponent } from './portfolio/portfolio.component';
 import { TestimonialsComponent } from './testimonials/testimonials.component';
 import { AchievementsComponent } from './achievements/achievements.component';
 import { SwiperModule } from 'ngx-swiper-wrapper';
+import { HelloComponent } from './hello/hello.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { SwiperModule } from 'ngx-swiper-wrapper';
     ServicesComponent,
     PortfolioComponent,
     TestimonialsComponent,
-    AchievementsComponent
+    AchievementsComponent,
+    HelloComponent
   ],
   imports: [
     BrowserModule,
