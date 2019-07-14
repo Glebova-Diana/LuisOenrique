@@ -65,4 +65,15 @@
 .section__img {
   width: 49%;
   margin: 110px 0 125px;
+  -webkit-transform: translate(0, 0);
+  -webkit-transition: -webkit-transform 1000ms;
+
+  transform: translate(0, 0);
+  transition: transform 1000ms;
+}
+
+
+.section__move {
+  -webkit-transform: translate(50px, 50px);
+  transform: translate(50px, 50px);
 }
