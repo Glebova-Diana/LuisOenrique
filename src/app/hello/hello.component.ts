@@ -12,9 +12,9 @@ export class HelloComponent implements OnInit {
 
     function scrollFunction() {
       if (document.body.scrollTop > 250 || document.documentElement.scrollTop > 250) {
-        document.getElementById("myBtn").style.display = "block";
+        document.getElementById("myBtn").classList.add('button-arrow--active');
       } else {
-        document.getElementById("myBtn").style.display = "none";
+        document.getElementById("myBtn").classList.remove('button-arrow--active');
       }
     }
   }

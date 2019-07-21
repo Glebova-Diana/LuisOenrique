@@ -198,11 +198,16 @@
   top: 65vh;
   right: 0;
   margin: 0 30px 0 0;
+  opacity: 0;
+  transition-duration: 1s;
+}
+
+.button-arrow--active {
+  opacity: 1;
 }
 
 .button-arrow__arrow {
-  display: none;
-  /*display: flex;*/
+  display: flex;
   justify-content: center;
   align-items: center;
   width: 45px;
