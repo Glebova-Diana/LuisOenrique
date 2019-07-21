@@ -138,10 +138,41 @@
 }
 
 .socials__link {
-  width: 20px;
-  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 24px;
+  height: 24px;
 
   text-underline: none;
+}
+
+.socials__link:hover {
+  background: #0084b4;
+}
+
+.socials__link:hover path {
+  fill: white;
+}
+
+.socials__facebook:hover {
+  background: #3b5998;
+}
+
+.socials__linkedin:hover {
+  background: #0073b0;
+}
+
+.socials__google:hover {
+  background: #dc5245;
+}
+
+.socials__behance:hover {
+  background: #1b74e8;
+}
+
+.socials__dribbble:hover {
+  background: #df3e7b;
 }
 
 .socials__img {
@@ -151,14 +182,6 @@
 
 .socials__img path {
   fill: #4d4d4d;;
-}
-
-.socials__img:hover {
-  background: #0084b4;
-}
-
-.socials__img:hover path {
-  fill: white;
 }
 
 .rights {
@@ -178,14 +201,15 @@
 }
 
 .button-arrow__arrow {
-  display: flex;
+  display: none;
+  /*display: flex;*/
   justify-content: center;
   align-items: center;
   width: 45px;
   height: 40px;
   padding: 3px 0 0 0;
 
-  border: none;
+  border: 1px solid var(--main-color);
   background: #ffffff;
   cursor: pointer;
 }

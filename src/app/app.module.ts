@@ -10,6 +10,9 @@ import { TestimonialsComponent } from './testimonials/testimonials.component';
 import { AchievementsComponent } from './achievements/achievements.component';
 import { SwiperModule } from 'ngx-swiper-wrapper';
 import { HelloComponent } from './hello/hello.component';
+import { SkillsComponent } from './skills/skills.component';
+import { ChartModule } from 'angular-highcharts';
+import { AnimateOnScrollModule } from 'ng2-animate-on-scroll';
 
 @NgModule({
   declarations: [
@@ -20,11 +23,14 @@ import { HelloComponent } from './hello/hello.component';
     PortfolioComponent,
     TestimonialsComponent,
     AchievementsComponent,
-    HelloComponent
+    HelloComponent,
+    SkillsComponent
   ],
   imports: [
     BrowserModule,
-    SwiperModule
+    SwiperModule,
+    ChartModule,
+    AnimateOnScrollModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]
