@@ -12,6 +12,7 @@ import { SwiperModule } from 'ngx-swiper-wrapper';
 import { HelloComponent } from './hello/hello.component';
 import { SkillsComponent } from './skills/skills.component';
 import { ChartModule } from 'angular-highcharts';
+import { AnimateOnScrollModule } from 'ng2-animate-on-scroll';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { ChartModule } from 'angular-highcharts';
   imports: [
     BrowserModule,
     SwiperModule,
-    ChartModule
+    ChartModule,
+    AnimateOnScrollModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]
