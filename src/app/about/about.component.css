@@ -18,14 +18,17 @@
 }
 
 .section__border {
+  display: block;
   width: 60px;
   height: 2px;
-  margin: 0 0 5px;
+  margin: 0 0 5px 2px;
 
   border: 2px solid #7a7a7a;
 }
 
 .section__title {
+  display: block;
+
   font-weight: 600;
   font-size: 46px;
   font-family: var(--main-font);
@@ -34,6 +37,7 @@
 }
 
 .section__text {
+  display: block;
   width: 78%;
   margin: 0 0 35px 0;
 
@@ -43,6 +47,9 @@
 }
 
 .section__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 50px;
   width: 240px;
 
@@ -54,6 +61,7 @@
   background: transparent;
   outline: none;
   cursor: pointer;
+  text-decoration: none;
 }
 
 .section__button:hover {
