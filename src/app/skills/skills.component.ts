@@ -12,12 +12,15 @@ export class SkillsComponent implements OnInit {
   public options: any = {
     chart: {
       type: 'areaspline',
-      backgroundColor: '#fafafa'
+      backgroundColor: '#fafafa',
     },
     plotOptions: {
       series: {
+        marker: {
+          enabled: false,
+        },
         animation: {
-          duration: 1000
+          duration: 2000
         }
       }
     },
@@ -44,7 +47,7 @@ export class SkillsComponent implements OnInit {
           else if (this.value === 7)
             return '<img src="../../assets/img/ai-skills.png" style="width: 26px; vertical-align: middle"/>';
           else
-            return this.value;
+            return '';
         }
       },
     },
@@ -52,31 +55,21 @@ export class SkillsComponent implements OnInit {
       title: {
         text: ''
       },
+      min: 50,
+      max: 100,
       labels: {
-        formatter: function () {
-          // return this.isFirst = 50 + '%';
-          return this.isLast = 100 + '%';
-          // this.value /1 + '%';
+          formatter: function () {
+            return this.value + '%';
+          }
         }
-      }
     },
     tooltip: {
       enabled: false
     },
     series: [{
       showInLegend: false,
-      // shadow: '#000000',
       data: [
-              // 0, 10, 15, 20, 30, 40, 50, 60, 70, 80, 83,
-        0, 83, 58, 74, 56, 96, 55, 82, 0
-      // 70, 65, 60, 58,
-      // 60, 65, 70, 74,
-      // 70, 65, 60, 56,
-      // 60, 65, 70, 75, 80, 85, 90, 96,
-      // 90, 85, 80, 75, 70, 65, 60, 55,
-      // 60,  70, 82,
-      // 75, 65, 55, 45, 35, 25, 15, 5, 0
-
+        49, 83, 58, 74, 56, 96, 55, 82, 49
       ],
       color: '#cccccc',
     },]
