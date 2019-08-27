@@ -13,6 +13,7 @@ import { HelloComponent } from './hello/hello.component';
 import { SkillsComponent } from './skills/skills.component';
 import { ChartModule } from 'angular-highcharts';
 import { AnimateOnScrollModule } from 'ng2-animate-on-scroll';
+import {ReactiveFormsModule} from "@angular/forms";
 
 @NgModule({
   declarations: [
@@ -30,6 +31,7 @@ import { AnimateOnScrollModule } from 'ng2-animate-on-scroll';
     BrowserModule,
     SwiperModule,
     ChartModule,
+    ReactiveFormsModule,
     AnimateOnScrollModule.forRoot()
   ],
   providers: [],

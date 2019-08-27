@@ -18,9 +18,6 @@ export class SkillsComponent implements OnInit {
       series: {
         marker: {
           enabled: false,
-        },
-        animation: {
-          duration: 2000
         }
       }
     },

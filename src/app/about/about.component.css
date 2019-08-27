@@ -44,6 +44,7 @@
   font-size: 16px;
   font-family: var(--main-font);
   color: var(--main-color);
+  line-height: 30px;
 }
 
 .section__button {

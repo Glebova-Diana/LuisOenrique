@@ -4,21 +4,26 @@
       <i class="headline__border"></i>
       <h2 class="headline__title">Say Hello!</h2>
     </div>
-    <form class="form">
+
+    <form class="form" [formGroup]="form" (ngSubmit)="onSubmit()">
       <div class="form__input">
-        <input class="form__name" type="text" placeholder="Name" required>
-        <input class="form__name form__name--email" type="email" placeholder="Email" required>
+        <input class="form__name" type="text" area-label="name" name="name" placeholder="Name" formControlName="name"
+               [ngClass]="{'input-invalid':form.get('name').invalid && form.get('name').touched}">
+        <input class="form__name form__name--email" type="email" area-label="email" placeholder="Email"
+               [ngClass]="{'input-invalid':form.get('email').invalid && form.get('email').touched}"
+               formControlName="email">
       </div>
-      <textarea class="form__text" placeholder="Message" required></textarea>
-      <button class="form__button" type="submit">
+      <textarea class="form__text" placeholder="Message" area-label="message" formControlName="text"></textarea>
+      <button class="form__button" type="submit" [disabled]="form.invalid">
         Send
-        <img class="form__arrow" src="../../assets/img/arrow-send-hello.png" alt="arrow">
+        <img class="form__arrow" src="./assets/img/arrow-send-hello.png" alt="arrow">
       </button>
     </form>
+
     <div class="border"></div>
     <div class="socials">
       <div class="socials__pic">
-        <a class="socials__link socials__facebook" href="javascript:;">
+        <a class="socials__link socials__facebook" href="https://www.facebook.com" target="_blank">
           <svg class="socials__img" version="1.1" xmlns="http://www.w3.org/2000/svg"
                xmlns:xlink="http://www.w3.org/1999/xlink" width="16" height="16" viewBox="0 0 16 16">
             <path fill="#444444"
@@ -27,7 +32,7 @@
         </a>
       </div>
       <div class="socials__pic">
-        <a class="socials__link" href="javascript:;">
+        <a class="socials__link" href="https://twitter.com" target="_blank">
           <svg class="socials__img" version="1.1" xmlns="http://www.w3.org/2000/svg"
                xmlns:xlink="http://www.w3.org/1999/xlink" width="16"
                height="16" viewBox="0 0 16 16">
@@ -37,7 +42,7 @@
         </a>
       </div>
       <div class="socials__pic">
-        <a class="socials__link socials__linkedin" href="javascript:;">
+        <a class="socials__link socials__linkedin" href="https://www.linkedin.com/in/diana-glebova" target="_blank">
           <svg class="socials__img" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                width="430.117px" height="430.117px" viewBox="0 0 430.117 430.117"
@@ -53,7 +58,7 @@
         </a>
       </div>
       <div class="socials__pic">
-        <a class="socials__link socials__google" href="javascript:;">
+        <a class="socials__link socials__google" href="https://www.google.com" target="_blank">
           <svg class="socials__img" version="1.1" xmlns="http://www.w3.org/2000/svg"
                xmlns:xlink="http://www.w3.org/1999/xlink" width="16"
                height="16" viewBox="0 0 16 16">
@@ -64,7 +69,7 @@
         </a>
       </div>
       <div class="socials__pic">
-        <a class="socials__link socials__behance" href="javascript:;">
+        <a class="socials__link socials__behance" href="https://www.behance.net" target="_blank">
           <svg class="socials__img" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                width="430.123px" height="430.123px" viewBox="0 0 430.123 430.123"
@@ -90,7 +95,7 @@
         </a>
       </div>
       <div class="socials__pic">
-        <a class="socials__link socials__dribbble" href="javascript:;">
+        <a class="socials__link socials__dribbble" href="https://dribbble.com" target="_blank">
           <svg class="socials__img" id="Layer" enable-background="new 0 0 64 64" viewBox="0 0 64 64"
                xmlns="http://www.w3.org/2000/svg">
             <path
