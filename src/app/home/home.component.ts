@@ -7,15 +7,13 @@ import {Component, OnInit, ViewChild} from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
-  // @ViewChild('mydiv') myDiv: any;
-
-
-  // ngAfterViewInit() {
-  //   this.myDiv.nativeElement.focus();
-  // }
-
   constructor() { }
 
   ngOnInit() {
+  }
+
+  scrollToAbout() {
+    let about = document.getElementById('about-section');
+    about.scrollIntoView();
   }
 }
