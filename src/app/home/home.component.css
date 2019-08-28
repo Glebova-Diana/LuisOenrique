@@ -125,6 +125,7 @@
   border: 1px solid #4d4d4d;
   cursor: pointer;
   outline: none;
+  background: transparent;
 }
 
 .main__button-hire {
