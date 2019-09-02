@@ -36,13 +36,13 @@ export class SkillsComponent implements OnInit {
         useHTML: true,
         formatter: function() {
           if(this.value === 1)
-            return '<img src="../../assets/img/xd-skills.png" style="width: 26px; vertical-align: middle"/>';
+            return '<img src="./assets/img/xd-skills.png" style="width: 26px; vertical-align: middle"/>';
           else if(this.value === 3)
-            return '<img src="../../assets/img/ae-skills.png" style="width: 26px; vertical-align: middle" />';
+            return '<img src="./assets/img/ae-skills.png" style="width: 26px; vertical-align: middle" />';
           else if (this.value === 5)
-            return '<img src="../../assets/img/ps-skills.png" style="width: 26px; vertical-align: middle"/>';
+            return '<img src="./assets/img/ps-skills.png" style="width: 26px; vertical-align: middle"/>';
           else if (this.value === 7)
-            return '<img src="../../assets/img/ai-skills.png" style="width: 26px; vertical-align: middle"/>';
+            return '<img src="./assets/img/ai-skills.png" style="width: 26px; vertical-align: middle"/>';
           else
             return '';
         }
