@@ -1,0 +1,95 @@
+.wrapper {
+  width: 85%;
+  max-width: 1165px;
+  height: 100vh;
+  margin: 0 auto;
+}
+
+.headline {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 80px 0 60px;
+}
+
+.headline__border {
+  width: 60px;
+  margin: 0 0 5px;
+
+  border: 2px solid #767676;
+}
+
+.headline__title {
+  font-weight: 600;
+  font-size: 46px;
+  font-family: var(--main-font);
+  color: var(--main-color);
+  text-transform: uppercase;
+}
+
+.main {
+  display: flex;
+  width: 82%;
+  margin: 0 auto 140px;
+  padding: 80px 75px 105px 120px;
+
+  border: 1px solid var(--sub-color);
+  cursor: grab;
+}
+
+.main__img {
+  height: 160px;
+  margin: 0 30px 0 0;
+}
+
+.main__text {
+  display: flex;
+  flex-direction: column;
+}
+
+.main__txt {
+  font-family: var(--main-font);
+  color: var(--sub-color);
+  text-transform: uppercase;
+}
+
+.main__name {
+  font-size: 30px;
+}
+
+.main__position {
+  margin: 0 0 20px 0;
+
+  font-size: 12px;
+  font-style: italic;
+}
+
+.main__comment {
+  font-size: 16px;
+  line-height: 22px;
+}
+
+::ng-deep .swiper-pagination-bullets {
+  top: 290px!important;
+}
+
+::ng-deep .swiper-pagination-handle {
+  padding: 0 !important;
+}
+
+::ng-deep .swiper-pagination-bullet {
+  width: 12px!important;
+  height: 12px!important;
+
+  border: 2px solid var(--sub-color)!important;
+  border-radius: 0!important;
+  background: transparent!important;
+}
+
+::ng-deep .swiper-pagination-bullet-active {
+  background: var(--sub-color)!important;
+}
+
+::ng-deep .swiper-pagination-bullet-first {
+  margin: 0!important;
+}
